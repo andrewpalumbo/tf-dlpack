@@ -4,7 +4,7 @@ project(tfdlpack C CXX)
 
 add_definitions(-std=c++11 -fPIC)
 include(cmake/util/FindCUDA.cmake)	
-option(NO_CUDA "Only build TFDLPACK with cpu" OFF)
+option(NO_CUDA "Only build TFDLPACK with cpu" ON)
 
 if(NOT PYTHON_EXECUTABLE)
   execute_process(
